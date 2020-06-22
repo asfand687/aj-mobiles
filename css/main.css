@@ -1,0 +1,281 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden; }
+
+.bg-main {
+  background-color: #f01a36;
+  color: #f4f4f4; }
+
+.bg-medium {
+  background-color: #f0e5e5;
+  color: #333; }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: left; }
+
+.visibility-hidden {
+  visibility: hidden; }
+
+.d-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem; }
+
+.text-center {
+  text-align: center; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.py-4 {
+  padding: 4rem 0; }
+
+.pl-1 {
+  padding-left: 1.5rem; }
+
+.pr-1 {
+  padding-right: 1.5rem; }
+
+.pb-1 {
+  padding-bottom: 1rem; }
+
+.pb-2 {
+  padding-bottom: 2rem; }
+
+.my-1 {
+  padding: 1rem 0; }
+
+.my-2 {
+  padding: 2rem 0; }
+
+.my-3 {
+  padding: 3rem 0; }
+
+.my-4 {
+  padding: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #f01a36;
+  display: block;
+  margin: 0 auto 1rem auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+#logo {
+  width: 70px;
+  height: 70px;
+  color: #f4f4f4;
+  text-transform: uppercase; }
+
+#main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 5; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    padding: 1rem 1.5rem; }
+  #main-nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #main-nav a:hover {
+      border-color: #f01a36; }
+    #main-nav a.current {
+      border-color: #f01a36; }
+
+#header-home {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/slider.jpg") no-repeat center center/cover fixed;
+  position: relative; }
+  #header-home:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000000a1;
+    z-index: 2; }
+  #header-home .header-content {
+    position: relative;
+    z-index: 3;
+    padding-top: 9rem;
+    color: #fff;
+    text-align: center; }
+    #header-home .header-content .heading {
+      font-size: 2.8rem;
+      font-weight: bold;
+      padding-top: 3rem;
+      letter-spacing: 2px; }
+    #header-home .header-content .text-sm {
+      font-size: 1.3rem; }
+    #header-home .header-content .btn-container {
+      margin-top: 1.4rem; }
+    #header-home .header-content .btn {
+      display: inline-block;
+      background-color: #f01a36;
+      color: #fff;
+      padding: 0.7rem 2.5rem;
+      margin-right: 1rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: all 0.7s ease; }
+      #header-home .header-content .btn:hover {
+        background-color: #f1465d; }
+    #header-home .header-content .btn-transparent {
+      background: transparent;
+      border: solid 1px #fff; }
+      #header-home .header-content .btn-transparent:hover {
+        background-color: #fff;
+        color: #f01a36; }
+
+#home-a .lead {
+  font-size: 1.1rem;
+  max-width: 1000px;
+  margin: 0 auto 2rem; }
+
+#home-a .grid-wrapper .d-flex > div:first-child .fas {
+  border-radius: 50%;
+  background: #f01a36;
+  color: #f4f4f4;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  transition: all 1s;
+  font-size: 25px; }
+
+#home-a .grid-wrapper .d-flex > div:last-child {
+  padding-left: 1.5rem; }
+
+#home-a .glider-contain {
+  width: 80%; }
+  #home-a .glider-contain .glider {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto; }
+    #home-a .glider-contain .glider img {
+      padding-bottom: 1rem; }
+
+#home-b .grid-wrapper {
+  margin-top: 5rem;
+  grid-template-columns: repeat(3, 1fr); }
+  #home-b .grid-wrapper .d-flex > div:first-child {
+    padding-top: 0.4rem; }
+  #home-b .grid-wrapper .d-flex h3 {
+    color: #f01a36; }
+  #home-b .grid-wrapper .d-flex p {
+    padding: 0rem 0.4rem 0.4rem 0rem;
+    font-size: 1.1rem; }
+  #home-b .grid-wrapper .grid-item {
+    margin-bottom: 1rem; }
+
+@media (max-width: 1030px) {
+  #header-home .header-content {
+    padding-top: 7rem; }
+    #header-home .header-content .heading {
+      padding-top: 3rem;
+      padding-bottom: 0.7rem;
+      line-height: 1.2;
+      font-size: 2.5rem; } }
+
+@media (max-width: 790px) {
+  #home-a .grid-wrapper {
+    grid-template-columns: 1fr; }
+  #home-a .glider-contain {
+    width: 95%; }
+    #home-a .glider-contain .glider {
+      width: 90%; }
+  #home-b .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 650px) {
+  #header-home #main-nav {
+    flex-direction: column; }
+  #home-a .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    #home-a .d-flex h3 {
+      margin: 1.3rem 0; }
+    #home-a .d-flex > div:last-child {
+      padding-left: 0 !important; }
+  #home-b .grid-wrapper {
+    grid-template-columns: 1fr; }
+    #home-b .grid-wrapper .d-flex {
+      flex-direction: column;
+      text-align: center;
+      align-items: center; }
+      #home-b .grid-wrapper .d-flex > div:first-child {
+        padding: 0;
+        padding-bottom: 1rem; } }
+
+@media (max-width: 450px) {
+  #header-home .header-content {
+    padding-top: 4rem; }
+    #header-home .header-content .heading {
+      padding-top: 3rem;
+      padding-bottom: 0.7rem;
+      line-height: 1.2;
+      font-size: 2.2rem; }
+    #header-home .header-content h2 {
+      font-size: 1.3rem; }
+    #header-home .header-content .btn {
+      padding: 0.5rem 2rem;
+      margin-bottom: 1rem; } }
