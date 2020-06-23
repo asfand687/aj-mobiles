@@ -58,6 +58,9 @@ html {
 .text-center {
   text-align: center; }
 
+p-2 {
+  padding: 2rem; }
+
 .py-1 {
   padding: 1rem 0; }
 
@@ -341,6 +344,9 @@ img {
       #footer .d-flex .social .fab:hover {
         background: #f01a36; }
 
+#footer .container.p-2 {
+  padding: 2rem !important; }
+
 @media (max-width: 1030px) {
   #header-home .header-content {
     padding-top: 7rem; }
@@ -410,4 +416,10 @@ img {
       font-size: 1.3rem; }
     #header-home .header-content .btn {
       padding: 0.5rem 2rem;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  #footer .d-flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #footer .d-flex p {
+      padding-bottom: 1rem; } }
