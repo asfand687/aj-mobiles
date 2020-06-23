@@ -4,12 +4,35 @@
   margin: auto;
   overflow: hidden; }
 
+html {
+  scroll-behavior: smooth; }
+
+.btn {
+  display: inline-block;
+  background-color: #f01a36;
+  color: #fff;
+  padding: 0.7rem 2.5rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 0.7s ease; }
+  .btn:hover {
+    background-color: #f1465d; }
+
 .bg-main {
   background-color: #f01a36;
   color: #f4f4f4; }
 
+.bg-dark {
+  background-color: #333;
+  color: #f4f4f4; }
+
 .bg-medium {
   background-color: #f0e5e5;
+  color: #333; }
+
+.bg-light {
+  background-color: #f4f4f4;
   color: #333; }
 
 .grid-wrapper {
@@ -52,6 +75,12 @@
 
 .pr-1 {
   padding-right: 1.5rem; }
+
+.pt-1 {
+  padding-top: 1rem; }
+
+.pt-2 {
+  padding-top: 2rem; }
 
 .pb-1 {
   padding-bottom: 1rem; }
@@ -226,6 +255,92 @@ img {
   #home-b .grid-wrapper .grid-item {
     margin-bottom: 1rem; }
 
+#home-c .grid-wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  text-align: center;
+  grid-gap: 1.5rem; }
+  #home-c .grid-wrapper .testimonial {
+    background-color: #fff;
+    padding: 2rem;
+    -webkit-box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47);
+    -moz-box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47);
+    box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47);
+    transition: all 0.7s ease; }
+    #home-c .grid-wrapper .testimonial:hover {
+      transform: translateY(-10px);
+      -webkit-box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.52);
+      -moz-box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.52);
+      box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.52); }
+    #home-c .grid-wrapper .testimonial img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 5px solid #f4f4f4;
+      -webkit-box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47);
+      -moz-box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47);
+      box-shadow: 4px 6px 15px 2px rgba(51, 51, 51, 0.47); }
+    #home-c .grid-wrapper .testimonial .name {
+      font-size: 1.2rem;
+      padding: 0.6rem 0; }
+    #home-c .grid-wrapper .testimonial .stars {
+      color: #c9db27;
+      margin-bottom: 0.7rem; }
+
+#home-d {
+  background: #fff; }
+  #home-d .text-fields {
+    display: grid;
+    grid-template-areas: 'name email' 'subject phone' 'message message';
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #home-d .text-fields .name-input {
+      grid-area: name; }
+    #home-d .text-fields .subject-input {
+      grid-area: subject; }
+    #home-d .text-fields .email-input {
+      grid-area: email; }
+    #home-d .text-fields .phone-input {
+      grid-area: phone; }
+    #home-d .text-fields .message-input {
+      grid-area: message;
+      height: 100px; }
+    #home-d .text-fields .text-input {
+      padding: 0.5rem 1rem; }
+  #home-d button[type='submit'] {
+    width: 50%;
+    border-radius: 0;
+    outline: none;
+    border: none; }
+
+#footer .grid-wrapper {
+  grid-template-columns: repeat(3, 1fr); }
+  #footer .grid-wrapper a {
+    color: #fff; }
+  #footer .grid-wrapper h3 {
+    margin: 0.6rem 0; }
+
+#footer h2 {
+  font-size: 2.9rem; }
+
+#footer .d-flex {
+  justify-content: space-between;
+  align-items: center; }
+  #footer .d-flex .social {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #footer .d-flex .social .fab {
+      color: #fff;
+      margin-right: 1rem;
+      font-size: 1.2rem;
+      padding: 0.8rem;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      transition: background 0.5s ease; }
+      #footer .d-flex .social .fab:hover {
+        background: #f01a36; }
+
 @media (max-width: 1030px) {
   #header-home .header-content {
     padding-top: 7rem; }
@@ -243,6 +358,8 @@ img {
     #home-a .glider-contain .glider {
       width: 90%; }
   #home-b .grid-wrapper {
+    grid-template-columns: repeat(2, 1fr); }
+  #home-c .grid-wrapper {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 650px) {
@@ -264,7 +381,22 @@ img {
       align-items: center; }
       #home-b .grid-wrapper .d-flex > div:first-child {
         padding: 0;
-        padding-bottom: 1rem; } }
+        padding-bottom: 1rem; }
+  #home-c .grid-wrapper {
+    grid-template-columns: 1fr; }
+  #home-d .text-fields {
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message' 'message'; }
+    #home-d .text-fields .text-input {
+      border: 1px solid #333; }
+  #footer .grid-wrapper {
+    grid-template-columns: 1fr; }
+    #footer .grid-wrapper .grid-item {
+      border-bottom: 1px solid #f0e5e5;
+      padding: 1.8rem 0; }
+      #footer .grid-wrapper .grid-item:last-child {
+        border: none; }
+  #footer .py-3 {
+    padding: 0 0 1rem; } }
 
 @media (max-width: 450px) {
   #header-home .header-content {
